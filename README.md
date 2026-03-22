@@ -28,19 +28,18 @@ Secure Data Environments, not in the cloud.
 
 ## Project Structure
 
-\`\`\`
-cogstack-project/
-├── build_cdb.py                  # Build MedCAT SNOMED concept database
-├── generate_summaries.py         # Generate synthetic NHS discharge summaries
-├── evaluate_medcat.py            # Baseline evaluation (F1, precision, recall)
-├── finetune.py                   # Unsloth QLoRA fine-tuning script
-├── inference.py                  # Fine-tuned model inference
-├── data/
-│   ├── discharge_summaries.jsonl # 8 labelled NHS-style discharge summaries
-│   └── baseline_results.json    # MedCAT baseline scores
-└── outputs/
-    └── clinical-snomed-adapter/  # QLoRA adapter weights
-\`\`\`
+| File | Description |
+|------|-------------|
+| `build_cdb.py` | Build MedCAT SNOMED concept database |
+| `generate_summaries.py` | Generate synthetic NHS discharge summaries |
+| `evaluate_medcat.py` | Baseline evaluation — F1, precision, recall |
+| `finetune.py` | Unsloth QLoRA fine-tuning script |
+| `inference.py` | Fine-tuned model inference |
+| `data/discharge_summaries.jsonl` | 8 labelled NHS-style discharge summaries |
+| `data/baseline_results.json` | MedCAT baseline scores |
+| `outputs/clinical-snomed-adapter/` | QLoRA adapter weights |
+| `r_analysis/validation_report.Rmd` | R Markdown validation report |
+| `results/validation_report.html` | Rendered clinical research report |
 
 ---
 
